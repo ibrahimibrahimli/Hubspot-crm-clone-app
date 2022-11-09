@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&family=Lexend:wght@400;500;600;700;800&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.nav_bar{
+    height: 54px;
+    background-color: #fff;
+    position: relative;
+    z-index: 99999999;
+}
+
+.nav_bar > div{
+    max-width: 1112px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_bar > div > ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav_group > div{
+    padding-right: 16px;
+}
+
+.nav_group> div{
+    display: flex;
+    align-items: center;
+    height: 54px;
+    cursor: pointer;
+}
+
+.nav_group > div:hover > p{
+    color: #1b9797 ;
+    text-decoration: underline;
+}
+
+.nav_group > div:hover > svg:first-child{
+    color: #1b9797 ;
+}
+.nav_group > div:hover > svg:last-child{
+    color: #1b9797 ;
+}
+
+.nav_group > div > svg:first-child{
+    margin-right: 6.8px;
+    color: #2E475D;
+    font-size: 16px;
+}
+
+.nav_group> div > svg:last-child{
+    margin: 0 4px 0 10px ;
+    color: #2E475D;
+    font-size: 25px;
+}
+
+.nav_group  p{
+    font-weight: 500;
+    font-size: 12px;
+    color: #2E475D;
+}
+
+.nav_bar > div > ul:last-child > li:first-child{
+    display: flex;
+    align-items: center;
+    transition: all ease 0.2s;
+}
+
+.nav_bar > div > ul:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar > div > ul:last-child  > li{
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar > div > ul:last-child > li:first-child > input{
+    outline: none;
+    border: none;
+}
+
+.nav_bar > div > ul:last-child > li:first-child > input::placeholder{
+   font-size: 12px;
+   font-weight: 500;
+}
+
+.nav_bar > div > ul:last-child > li:first-child > svg{
+    font-size: 20px;
+    color: #00A4BD;
+}
+
+.longWith  svg{
+    font-size: 20px;
+    color: #00A4BD;
+}
+
+.longWith{
+    width: 176px;
+    border: 1px solid #00A4BD;
+    border-radius: 5px;
+    height: 24.5px!important;
+}
+
+.shortWith{
+    width: 36px;
+}
+
+.shortWith > input{
+    display: none;
+}
+
+.nav_bar > div > ul:last-child > li > a{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2E475D;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav_bar > div > ul:last-child > li > div > button{
+    border: none;
+    background-color: #fff;
+    color:#2E475D ;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 54px;
+}
+
+.nav_bar > div > ul:last-child > li > div > button > svg{
+    font-size: 20px;
+}
+
+.nav_bar > div > ul:last-child > li:hover > a{
+    text-decoration: underline;
+    color: #0B8494;
+}
+.nav_bar > div > ul:last-child > li > div > button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.nav_bar > div > ul:last-child > li > div > button > span{
+    height: 15px;
+}
+
+.nav_bar > div > ul:last-child > li:hover  span{
+    text-decoration: underline;
+    color: #0B8494;
+}
+
+
+.langVisible{
+    position: relative;
+}
+
+.langVisible > div{
+    width: 99.38px;
+    padding: 12px 0;
+    border: 1px solid rgb(182, 199, 214);
+    position: absolute;
+    top: 50px;
+    left: 24px;
+    border-radius: 3px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.langVisible > span{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border-left: 1px solid rgb(182, 199, 214);
+    border-top: 1px solid rgb(182, 199, 214);
+    top: 43px;
+    transform: rotate(45deg);
+    left: 65px;
+    background-color: #fff;
+    z-index: 20;
+}
+
+.langVisible > div > ul{
+    list-style: none;
+}
+
+.langVisible > div > ul > li{
+    padding:4px 0 ;
+}
+
+.langVisible > div > ul > li > a{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2E475D ;
+    text-decoration: none;
+    width: 57.3px;
+    padding: 0 20px;
+}
+
+.langVisible > div > ul > li:hover > a{
+    text-decoration: underline;
+    color: #0B8494;
+}
+
+.langUnvisible > div{
+    display: none;
+}
+
+.aboutVisible{
+    z-index: 30;
+    position: relative;
+    height: 54px;
+}
+
+
+.aboutVisible > ul{
+    position: absolute;
+    list-style: none;
+    border: 1px solid rgb(182, 199, 214);
+    border-radius: 3px;
+    width: 172.8px;
+    right: -15px;
+    top: 50px;
+    padding: 12px 0;
+    background-color: #fff;
+}
+
+.aboutUnvisible > ul{
+    display: none;
+}
+
+.aboutVisible > ul > li{
+    padding: 4px 0;
+}
+
+.aboutVisible > ul > li > a{
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #2E475D ;
+    font-weight: 600;
+}
+
+.aboutVisible > ul > li:hover > a{
+      text-decoration: underline;
+    color: #0B8494;
+}
+
+.aboutVisible > span{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border-left: 1px solid rgb(182, 199, 214);
+    border-top: 1px solid rgb(182, 199, 214);
+    top: 43px;
+    transform: rotate(45deg);
+    left: 40px;
+    background-color: #fff;
+    z-index: 20;
+}
+
+
+
+.nav_menu{
+    height: 80px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgb(33 51 67 / 12%);
+}
+
+.nav_menu > div{
+    width: 1112px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_long{
+    height: 80px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_long  img{
+    width: 100px;
+}
+
+.logo_short{
+    height: 80px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_short   img{
+    width: 30px;
+}
+
+.nav_menu_short{
+    width: 922px;
+    height: 80px;
+    margin-left: 48px;
+    display: flex;
+    justify-content:space-between ;
+    transition: all ease 0.3s;
+}
+
+.nav_menu_long{
+    width: 1034px;
+    height: 80px;
+    margin-left: 16px;
+    display: flex;
+    justify-content:space-between ;
+    transition: all ease 0.3s;
+}
+
+.nav_menu > div > div:last-child > ul{
+    list-style: none;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu > div > div:last-child > ul > li:hover > a{
+    color: #0B8494;
+    text-decoration: underline;
+}
+
+.nav_menu > div > div:last-child > ul:first-child > li{
+    padding: 0 25px ;
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu > div > div:last-child > ul:last-child > li{
+ padding-left: 20px ;
+}
+
+.nav_menu > div > div:last-child > ul > li > a{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 27px;
+    color: rgb(46, 71, 93);
+}
+
+.nav_menu > div > div:last-child > ul > li > svg{
+    position: absolute;
+    font-size: 30px;
+    color: rgb(46, 71, 93);
+    right: -10px;
+    top: 27px;
+}
+
+.nav_menu > div > div:last-child > ul:last-child > li > a{
+    width: 145.48px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 21.98px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #FE5C35;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_menu > div > div:last-child > ul:last-child > li:first-child > a{
+    background-color: #FE5C35;
+    color: #FBFBFB;
+}
+
+.nav_menu > div > div:last-child > ul:last-child > li:first-child > a:hover{
+    opacity: 0.4;
+}
+
+.nav_menu > div > div:last-child > ul:last-child > li:last-child > a{
+    color: #FE5C35;
+}
+
+.nav_menu > div > div:last-child > ul:last-child:hover >li:last-child > a:hover{
+    background-color: #FFEBE6;
+}
+
+.visible_soft > div{
+    position: absolute;
+    top: 80px;
+    width: 1080px;
+    border: 1px solid  rgb(182, 199, 214);
+    left: -160px;
+    border-radius: 3px;
+    background-color: #F6F9FC;
+    padding-top: 30px;
+}
+
+.visible_soft > span{
+    position: absolute;
+    top: 78px;
+    width: 142px;
+    height: 5px;
+    background-color:rgb(46, 71, 93) ;
+    z-index: 4;
+    border-radius: 5px;
+    left: -4px;
+}
+
+
+.unVisible_soft > div{
+    display: none;
+}
+
+.softwareMoreMenu > h3{
+    padding: 0 0 12px;
+    color: rgb(46, 71, 93);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.softwareMoreMenu > p{
+    margin-bottom: 12px;
+    color: rgb(46, 71, 93);
+    font-size: 14px;
+    text-align: center;
+}
+
+.moreMenuButtons{
+    display: flex;
+    justify-content: center;
+}
+
+.moreMenuButtons > a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    padding: 12px 64px;
+    border: 1px solid rgb(234, 240, 246);
+    border-radius: 3px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #0b8484;
+    font-weight: 600;
+}
+
+.moreMenuButtons > a p{
+    margin: 7px 0 8px;
+    line-height: 19.88px;
+}
+
+.moreMenuButtons > a  svg{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.moreMenuButtons > a:hover{
+    text-decoration: underline;
+}
+
+.marketingHub{
+    display: flex;
+    flex-wrap: wrap;
+    width: 869px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marketingHub > a{
+    display: flex;
+    margin: 8px;
+    padding: 16px;
+    width:273.66px ;
+    height:132.78px ;
+    background-color: #fff;
+    border: 1px solid rgb(234, 240, 246);
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.marketingHub > a > div:first-child{
+    margin-right: 8.8px;
+    width: 24px;
+    height: 24px;
+}
+
+.marketingHub > a > div:first-child >img{
+width: 24px;
+height: 24px;
+}
+
+.marketingHub > a > div > h4{
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(46, 71, 93);
+}
+
+.marketingHub > a > div > p{
+    color: rgb(46, 71, 93);
+    font-size: 14px;
+}
+
+.marketingHub > a > div > p > span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b8484;
+    position: relative;
+}
+
+.marketingHub > a > div > p > span > svg{
+    position: absolute;
+    top: 21px;
+}
+
+.marketingHub > a span:hover{
+    text-decoration: underline;
+}
+
+.softwareMoreMenu > div:last-child{
+    height: 91.72px;
+    background-color: #fff;
+    padding: 16px 96px;
+}
+
+.softwareMoreMenu > div:last-child > a{
+    text-decoration: none;
+}
+
+.softwareMoreMenu > div:last-child > a > h3{
+    padding-bottom: 8px;
+    color: rgb(46, 71, 93);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.softwareMoreMenu > div:last-child > a > p{
+    font-size: 12px;
+    color: rgb(46, 71, 93);
+    text-align: center;
+}
+
+.softwareMoreMenu > div:last-child > a > p > span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #0b8484;
+    position: relative;
+}
+
+.softwareMoreMenu > div:last-child > a > p > span > svg{
+    position: absolute;
+    top: 2px;
+    right: -20px;
+}
+
+.softwareMoreMenu > div:last-child > a > p > span:hover{
+    text-decoration: underline;
+}
+
+.visibleSources{
+    position: relative;
+}
+
+.visibleSources > div{
+    position: absolute;
+    top: 80px;
+    width: 725px;
+    padding: 16px 8px;
+    border: 1px solid rgb(234, 240, 246);
+    border-radius: 3px;
+    background-color: #fff;
+    left: -110px;
+    overflow: auto;
+    display: flex;
+    z-index: 20;
+}
+
+.unVisibleSources > div {
+    display: none;
+}
+
+.visibleSources > span {
+    position: absolute;
+    top: 78px;
+    width: 142px;
+    height: 5px;
+    background-color:rgb(46, 71, 93) ;
+    z-index: 4;
+    border-radius: 5px;
+    left: -4px;
+}
+
+.sourceMenu > div:first-child {
+    width: 334px;
+}
+
+.sourceMenu > div:last-child {
+    width: 374px;
+}
+
+.sourceMenu > div > div{
+    display: flex;
+    padding: 12px;
+}
+
+.sourceMenu > div > div > div:first-child{
+    width: 35px;
+    height: 35px;
+    margin-right: 9px;
+    background-color: #F6F9FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sourceMenu > div > div > div:last-child > h3{
+    margin: 8px 0;
+    color: #3E556A;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sourceMenu > div > div > div:last-child > p{
+    padding: 4px 0 8px;
+}
+
+.sourceMenu > div > div > div:last-child > p > a{
+    text-decoration: none;
+    color: rgb(46, 71, 93);
+    font-size: 16px;
+}
+
+.sourceMenu > div > div > div:last-child > p > a:hover{
+    text-decoration: underline;
+    color: #0b8484;
+}
