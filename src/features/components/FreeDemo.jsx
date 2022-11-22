@@ -16,6 +16,7 @@ const FreeDemo = () => {
   const [selectBox, setSelectBox] = useState('')
   const [checkBox, setCheckBox] = useState(false)
   const disabled = [firstName, lastName, email ,phoneNumber, companyName, websiteUrl, selectBox, checkBox].every(Boolean)
+  const diable = [firstName, lastName, email, phoneNumber, companyName, websiteUrl, selectBox, checkBox]
 
   const handleFormController = () =>{
 
@@ -24,6 +25,8 @@ const FreeDemo = () => {
        alert("fdgdfg") 
     }
      
+
+
   }
 
   return (
