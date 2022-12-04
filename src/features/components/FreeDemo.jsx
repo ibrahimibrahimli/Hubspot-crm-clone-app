@@ -4,6 +4,7 @@ import {BsCheckCircleFill} from 'react-icons/bs'
 import offerPageLeft from '../../assets/img/Offer-Page-Left-Corner.svg'
 import offerPageRight from '../../assets/img/Offer-Page-Right-Corner.svg'
 import productUIBlobs from '../../assets/img/ProductUI+Blobs.webp'
+import { useEffect } from 'react';
 
 const FreeDemo = () => {
 
@@ -16,18 +17,20 @@ const FreeDemo = () => {
   const [selectBox, setSelectBox] = useState('')
   const [checkBox, setCheckBox] = useState(false)
   const disabled = [firstName, lastName, email ,phoneNumber, companyName, websiteUrl, selectBox, checkBox].every(Boolean)
-  const diable = [firstName, lastName, email, phoneNumber, companyName, websiteUrl, selectBox, checkBox]
 
-  const handleFormController = () =>{
 
-    
-    if(disabled){
-       alert("fdgdfg") 
-    }
-     
-
+  const handleFormController = () => {
+     if(firstName === ""){
+      alert("firstname is empty")
+     }
 
   }
+
+ useEffect(() => {
+    handleFormController()
+  }, [firstName, lastName, email ,phoneNumber, companyName, websiteUrl, selectBox, checkBox])
+
+
 
   return (
     <>
@@ -180,8 +183,7 @@ const FreeDemo = () => {
                     </p>
                     <span></span>
                     <Link to={""}>
-                      <button type='submit'
-                       onClick={handleFormController}>Get your free demo</button>
+                      <button onClick={handleFormController} type='submit'>Get your free demo</button>
                     </Link>
                   </div>
                 </form>
